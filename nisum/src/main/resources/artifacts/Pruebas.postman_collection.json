@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "76d78a30-4806-4a29-967b-9af44171bb6a",
+		"name": "Pruebas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "NISUM",
+			"item": [
+				{
+					"name": "Save user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Juan Rodriguez\",\r\n\t\"email\": \"juan@rodriguez.org\",\r\n\t\"password\": \"hunter2\",\r\n\t\"phones\": [{\r\n\t\t\t\"number\": \"1234567\",\r\n\t\t\t\"citycode\": \"1\",\r\n\t\t\t\"contrycode\": \"57\"\r\n\t\t}]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/v1/users/save-users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"save-users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/v1/users/get-user/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"get-user",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/v1/users/get-users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"get-users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/v1/users/delete-user/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"delete-user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Daniel Camilo\",\r\n\t\"email\": \"danikamilo777@gmail.com\",\r\n\t\"password\": \"huAnter2\",\r\n\t\"phones\": [{\r\n\t\t\t\"number\": \"1234567\",\r\n\t\t\t\"citycode\": \"1\",\r\n\t\t\t\"contrycode\": \"57\"\r\n\t\t}]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/v1/users/update-user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"update-user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
